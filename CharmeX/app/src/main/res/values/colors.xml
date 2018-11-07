@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>-->
+
+    <!-- cores da paleta do app -->
+    <color name="corPreto">#000000</color>
+    <color name="corBranco">#ffffff</color>
+    <color name="corRoxoClaro">#905fb7</color>
+    <color name="corRoxoEscuro">#5708bf</color>
+    <color name="corVerdeEscuro">#6fa649</color>
+    <color name="corAmareloEscuro">#bd8108</color>
+    <color name="corRosa">#d81b60</color>
+</resources>
