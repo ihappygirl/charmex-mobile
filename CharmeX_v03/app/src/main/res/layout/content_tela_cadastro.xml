@@ -34,6 +34,7 @@
         android:ems="10"
         android:hint="@string/nomeCompleto"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/txtUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +51,7 @@
         android:ems="10"
         android:hint="@string/nomeUsuario"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/txtSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +68,7 @@
         android:ems="10"
         android:hint="@string/senha"
         android:inputType="textPassword"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/txtEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,13 +85,14 @@
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/txtCPF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblCPF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
 
     <EditText
-        android:id="@+id/txtCPF"
+        android:id="@+id/lblCPF"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -98,6 +102,7 @@
         android:ems="10"
         android:hint="@string/cpf"
         android:inputType="number"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/txtDataNascimento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,10 +119,11 @@
         android:ems="10"
         android:hint="@string/dataNascimento"
         android:inputType="date"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/txtTelCel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCPF" />
+        app:layout_constraintTop_toBottomOf="@+id/lblCPF" />
 
     <EditText
         android:id="@+id/txtTelCel"
@@ -130,6 +136,7 @@
         android:ems="10"
         android:hint="@string/telefoneOuCelular"
         android:inputType="phone"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

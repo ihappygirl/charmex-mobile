@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.atomicfourtech.charmex_v02", appContext.getPackageName());
+        assertEquals("com.atomicfourtech.charmex", appContext.getPackageName());
     }
 }

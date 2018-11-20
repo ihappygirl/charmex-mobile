@@ -43,5 +43,6 @@
     <!-- Strings da Tela Principal -->
 
     <string name="btnAgendamentos">Agendamentos</string>
+    <string name="title_activity_sla">sla</string>
 
 </resources>

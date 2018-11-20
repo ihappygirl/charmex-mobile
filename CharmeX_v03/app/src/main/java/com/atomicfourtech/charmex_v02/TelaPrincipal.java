@@ -5,7 +5,6 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.menu.ListMenuItemView;
 import android.view.MenuItem;
 
 public class TelaPrincipal extends AppCompatActivity {
@@ -33,7 +32,6 @@ public class TelaPrincipal extends AppCompatActivity {
                     Fragment selectedFragment = null;
                     String title = "";
 
-
                     switch (item.getItemId()) {
                         case R.id.nav_home:
                             selectedFragment = new FragmentInicio();
@@ -58,8 +56,6 @@ public class TelaPrincipal extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                                 selectedFragment).commit();
                         getSupportActionBar().setTitle(title);
-                        // change icon to arrow drawable
-                        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_chevron_left);
                     }
 
                     return true;
