@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblBemVindo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Olá, (Fulano de Tal) :)"
+            android:textAlignment="center"
+            android:textColor="@color/corRosa"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/container_pesquisa"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblBemVindo"
+            android:layout_alignStart="@+id/barraPesquisa"
+            android:layout_alignEnd="@+id/barraPesquisa"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-6dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/corRosa"
+            android:gravity="center_vertical|center_horizontal"
+            android:minHeight="?attr/actionBarSize"
+            android:outlineAmbientShadowColor="@color/corPreto"
+            android:padding="0dp"
+            android:theme="?attr/actionBarTheme" />
+
+        <SearchView
+            android:id="@+id/barraPesquisa"
+            style="@android:style/Widget.Material.Light.SearchView"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblBemVindo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/corBranco"
+            android:foregroundTint="@color/corBranco"
+            android:gravity="top|center_vertical|center_horizontal|start"
+            android:queryBackground="@color/corBranco"
+            android:queryHint="@string/search_hint">
+
+        </SearchView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/barraPesquisa"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/corRoxoClaro"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblRegioes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/roboto_medium_italic"
+                android:padding="5dp"
+                android:text="Pesquise por Regiões:"
+                android:textAlignment="textStart"
+                android:textColor="@color/corBranco"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/container_regioes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="true"
+                android:clipToPadding="true"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/container_btn_regioes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageButton
+                        android:id="@+id/imgBtnZonaNorte"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/corRosa"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_logo_deitado10" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnZonaSul"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/corRosa"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_logo_deitado10" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnZonaLeste"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/corRosa"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_logo_deitado10" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnZonaOeste"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/corRosa"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_logo_deitado10" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnCentro"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/corRosa"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_logo_deitado10" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

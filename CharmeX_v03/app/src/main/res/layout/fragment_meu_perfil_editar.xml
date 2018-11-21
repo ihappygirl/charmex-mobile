@@ -2,11 +2,13 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_editar_perfil"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaPrincipal">
+    tools:context=".home.TelaPrincipal">
 
-    <include layout="@layout/content_meu_perfil_editar" />
+    <include
+        layout="@layout/content_meu_perfil_editar" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabSalvar"

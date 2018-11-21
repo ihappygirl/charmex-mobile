@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".TelaSplash"
+            android:name=".outrasactivities.TelaSplash"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TelaLogin"></activity>
-        <activity android:name=".TelaEsqueciMinhaSenha"></activity>
-        <activity android:name=".TelaCadastro"></activity>
-        <activity android:name=".TelaPrincipal"></activity>
+        <activity android:name=".login.TelaLogin"></activity>
+        <activity android:name=".login.TelaEsqueciMinhaSenha"></activity>
+        <activity android:name=".login.TelaCadastro"></activity>
+        <activity android:name=".home.TelaPrincipal"></activity>
     </application>
 
 </manifest>

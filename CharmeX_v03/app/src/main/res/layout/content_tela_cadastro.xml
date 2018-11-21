@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".TelaCadastro"
+    tools:context=".login.TelaCadastro"
     tools:showIn="@layout/activity_tela_cadastro">
 
     <TextView
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/txtNomeEmpresa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -55,7 +55,7 @@
         app:layout_constraintBottom_toTopOf="@+id/txtSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeEmpresa" />
 
     <EditText
         android:id="@+id/txtSenha"

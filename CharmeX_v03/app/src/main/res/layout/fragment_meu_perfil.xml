@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaPrincipal">
+    tools:context=".home.TelaPrincipal">
 
     <include layout="@layout/content_meu_perfil"/>
 
@@ -19,5 +19,11 @@
         app:backgroundTint="@color/corRosa"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_editar01" />
+
+    <FrameLayout
+        android:id="@+id/child_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation"/>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -5,19 +5,10 @@
     android:layout_height="match_parent"
     android:background="@color/corBranco">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerAgendamentos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@color/corRoxoClaro"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:scrollbars="vertical"
-        tools:listitem="@android:layout/activity_list_item" />
+
+
+    <include layout="@layout/content_meus_agendamentos"/>
+
+
+
 </RelativeLayout>
