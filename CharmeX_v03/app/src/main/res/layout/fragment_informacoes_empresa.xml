@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtInfo"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/container_info_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtInfo"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="true"
+            android:background="@color/corBranco"
+            android:isScrollContainer="false"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/txtInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableInfoLogin"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/corRoxoClaro"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="10dp"
+                android:text="Descrição do Profissional"
+                android:textAlignment="center"
+                android:textColor="@color/corBranco"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/tableDescricaoProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtDescricaoProfissional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/roboto_regular_italic"
+                    android:padding="2dp"
+                    android:text="Descrição da empresa, descrição da empresa descrição da empresa descrição da empresa descrição da empresa descrição da empresa descrição da empresa descrição da empresa descrição da empresa descrição da empresa descrição da empresa"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txtInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableInfoLogin"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/corRoxoClaro"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="10dp"
+                android:text="Horário de Funcionamento"
+                android:textAlignment="center"
+                android:textColor="@color/corBranco"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/tableHoraFuncProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtHoraFunc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/roboto_regular_italic"
+                    android:padding="2dp"
+                    android:text="Das 8:00 as 17:00"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/txtInfo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableInfoLogin"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/corRoxoClaro"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="10dp"
+                android:text="Endereço Completo"
+                android:textAlignment="center"
+                android:textColor="@color/corBranco"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/tableEnderecoProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/corPreto">
+
+                    <TextView
+                        android:id="@+id/txtEndereco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/roboto_regular_italic"
+                        android:padding="2dp"
+                        android:text="Rua Baker Street"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/corPreto">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/lblEndNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="2dp"
+                            android:text="Nº:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/corPreto"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtEndNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_regular_italic"
+                            android:padding="2dp"
+                            android:text="221"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/lblEndCompl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="2dp"
+                            android:text="Complem.:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/corPreto"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtEndCompl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_regular_italic"
+                            android:padding="2dp"
+                            android:text="Apto 212"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/lblEndCEP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="2dp"
+                            android:text="CEP:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/corPreto"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtEndCEP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_regular_italic"
+                            android:padding="2dp"
+                            android:text="06654-160"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/lblEndBairro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="2dp"
+                            android:text="Bairro:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/corPreto"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtEndBairro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_regular_italic"
+                            android:padding="2dp"
+                            android:text="Vila Aurora"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/corPreto">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/lblEndCidade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="2dp"
+                            android:text="Cidade:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/corPreto"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtEndCidade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/roboto_regular_italic"
+                            android:padding="2dp"
+                            android:text="São Paulo"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txtInfo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableInfoLogin"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/corRoxoClaro"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="10dp"
+                android:text="Redes Sociais"
+                android:textAlignment="center"
+                android:textColor="@color/corBranco"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/tableRedesSociaisProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/corPreto">
+
+                    <ImageView
+                        android:id="@+id/iconWhats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/ic_iconfinder_whatsapp_square_social_media" />
+
+                    <TextView
+                        android:id="@+id/txtRedesWhats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/roboto_regular_italic"
+                        android:padding="2dp"
+                        android:text="whats"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/corPreto">
+
+                    <ImageView
+                        android:id="@+id/iconFace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/ic_iconfinder_square_facebook_" />
+
+                    <TextView
+                        android:id="@+id/txtRedesFace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/roboto_regular_italic"
+                        android:padding="2dp"
+                        android:text="face"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/corPreto">
+
+                    <ImageView
+                        android:id="@+id/iconInsta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/ic_iconfinder_instagram" />
+
+                    <TextView
+                        android:id="@+id/txtRedesInsta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/roboto_regular_italic"
+                        android:padding="2dp"
+                        android:text="insta"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/ic_iconfinder_globe_" />
+
+                    <TextView
+                        android:id="@+id/txtRedesSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/roboto_regular_italic"
+                        android:padding="2dp"
+                        android:text="site"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -9,10 +9,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.atomicfourtech.charmex_v02.R;
-import com.atomicfourtech.charmex_v02.agendar.FragmentAgendar;
 import com.atomicfourtech.charmex_v02.agendar.FragmentMeusAgendamentos;
-import com.atomicfourtech.charmex_v02.perfil.FragmentEditarPerfil;
 import com.atomicfourtech.charmex_v02.perfil.FragmentMeuPerfil;
+import com.atomicfourtech.charmex_v02.perfil.FragmentPerfilProfissional;
 
 public class TelaPrincipal extends AppCompatActivity {
 
@@ -24,7 +23,8 @@ public class TelaPrincipal extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        getSupportActionBar().setTitle("Inicio");
+        getSupportActionBar().setTitle("Início");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -55,13 +55,14 @@ public class TelaPrincipal extends AppCompatActivity {
 
                         default:
                             selectedFragment = new FragmentInicio();
-                            title = "Inicio";
+                            title = "Início";
                             break;
                     }
 
                     if (selectedFragment != null) {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                                 selectedFragment).commit();
+
                         getSupportActionBar().setTitle(title);
                     }
 

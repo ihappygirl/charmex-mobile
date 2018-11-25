@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".login.TelaEsqueciMinhaSenha">
 
-    <include layout="@layout/content_tela_esqueci_minha_senha" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <include layout="@layout/content_tela_esqueci_minha_senha" />
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

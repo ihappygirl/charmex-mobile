@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <include layout="@layout/content_tela_agendar"/>
+    <include layout="@layout/content_tela_lista_empresas"/>
 
     <FrameLayout
-        android:id="@+id/container_fragment_tela_perfil_empresa"
+        android:id="@+id/container_fragment_perfil_empresa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/bottom_navigation"/>

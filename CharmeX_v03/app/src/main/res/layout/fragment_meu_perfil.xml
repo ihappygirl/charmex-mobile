@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/ic_editar01" />
 
     <FrameLayout
-        android:id="@+id/child_fragment_container"
+        android:id="@+id/container_fragment_editar_perfil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/bottom_navigation"/>

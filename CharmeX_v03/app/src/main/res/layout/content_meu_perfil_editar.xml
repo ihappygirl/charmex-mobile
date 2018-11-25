@@ -14,7 +14,7 @@
         android:scrollbars="none">
 
         <LinearLayout
-            android:id="@+id/container_nome_cliente"
+            android:id="@+id/container_info_cliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -29,14 +29,13 @@
             android:paddingBottom="0dp">
 
             <ImageView
-                android:id="@+id/imgPerfil"
+                android:id="@+id/imgPerfilEmpresa"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="10dp"
-                android:background="@color/corBranco"
                 android:scaleType="fitCenter"
-                android:src="@drawable/launcher_hdpi" />
+                android:src="@drawable/ic_usuarios" />
 
             <EditText
                 android:id="@+id/txtNomeClienteEditar"
@@ -58,8 +57,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/corBranco"
                 android:textColorHint="@color/corBranco"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -67,7 +65,7 @@
             android:id="@+id/txtInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/container_nome_cliente"
+            android:layout_below="@+id/container_info_cliente"
             android:layout_centerHorizontal="true"
             android:layout_margin="0dp"
             android:background="@color/corRosa"
@@ -86,7 +84,7 @@
             android:layout_alignParentStart="true">
 
             <LinearLayout
-                android:id="@+id/container_info_cliente"
+                android:id="@+id/container_editar_informacoes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/txtInfo"

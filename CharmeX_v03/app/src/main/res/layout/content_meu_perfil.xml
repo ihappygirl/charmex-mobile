@@ -29,17 +29,15 @@
             android:paddingBottom="0dp">
 
             <ImageView
-                android:id="@+id/imgPerfil"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_margin="10dp"
-                android:background="@color/corBranco"
                 android:scaleType="fitCenter"
-                android:src="@drawable/launcher_hdpi" />
+                android:src="@drawable/ic_usuarios" />
 
             <TextView
-                android:id="@+id/txtNomeCliente"
+                android:id="@+id/perfilCliente_txtNomeCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -137,7 +135,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/txtCPF"
+                            android:id="@+id/perfilCliente_txtCPF"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -167,7 +165,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/txtNasc"
+                            android:id="@+id/perfilCliente_txtNasc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -195,7 +193,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/txtTelCel"
+                            android:id="@+id/perfilCliente_txtTelCel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -207,112 +205,10 @@
 
                 </TableLayout>
 
-                <TextView
-                    android:id="@+id/txtInfo2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tableInfoLogin"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/corRoxoClaro"
-                    android:fontFamily="@font/roboto_medium"
-                    android:padding="10dp"
-                    android:text="Informações de Login"
-                    android:textAlignment="center"
-                    android:textColor="@color/corBranco"
-                    android:textSize="18sp" />
-
                 <TableLayout
                     android:id="@+id/tableInfoLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/lblUsuario"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:padding="2dp"
-                            android:text="Nome de Usuário:"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/corPreto"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txtUsuario"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:fontFamily="@font/roboto_regular_italic"
-                            android:padding="2dp"
-                            android:text="mayara_bispo"
-                            android:textSize="14sp" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/lblSenha"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:padding="2dp"
-                            android:text="Senha:"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/corPreto"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txtSenha"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:fontFamily="@font/roboto_regular_italic"
-                            android:padding="2dp"
-                            android:text="************"
-                            android:textSize="14sp" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/lblEmail"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:padding="2dp"
-                            android:text="E-mail:"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/corPreto"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txtEmail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:fontFamily="@font/roboto_regular_italic"
-                            android:padding="2dp"
-                            android:text="mayara.bispo@email.com"
-                            android:textSize="14sp" />
-
-                    </TableRow>
 
                 </TableLayout>
 

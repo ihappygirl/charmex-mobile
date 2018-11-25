@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,8 +22,9 @@ public class FragmentMeuPerfil extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_meu_perfil, container, false);
 
+
         //evento do fabEditar
-        final FloatingActionButton fabEditarPerfil = (FloatingActionButton) view.findViewById(R.id.fabEditar);
+        final FloatingActionButton fabEditarPerfil = view.findViewById(R.id.fabEditar);
         fabEditarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,7 +40,8 @@ public class FragmentMeuPerfil extends Fragment {
     private void irParaEditarPerfil(FloatingActionButton fabEditarPerfil) {
         Fragment childFragment = new FragmentEditarPerfil();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(R.id.child_fragment_container, childFragment).commit();
+        transaction.replace(R.id.container_fragment_editar_perfil, childFragment).commit();
         fabEditarPerfil.setImageResource(R.drawable.ic_check_black_24dp);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Editar Perfil");
     }
 }

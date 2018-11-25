@@ -1,10 +1,7 @@
 <resources>
     <!--Strings dos Nomes das telas -->
     <string name="app_name">Charme X</string>
-    <string name="tela_cadastro">Crie sua conta :)</string>
-    <string name="tela_esqueci_minha_senha">Esqueci minha senha</string>
     <string name="fragment_inicio">Inicio</string>
-    <string name="fragment_meus_agendamentos">Meus Agendamentos</string>
     <string name="fragment_meu_perfil">Meu Perfil</string>
 
     <!--Strings dos Nomes das telas -->
@@ -38,11 +35,8 @@
     <!-- Strings da Tela Esqueci Minha Senha -->
 
     <!-- Strings da Tela Principal -->
-    <string name="app_label">Pesquisa</string>
-    <string name="search_hint">Buscar por segmento, serviço ou empresa</string>
     <!-- Strings da Tela Principal -->
 
     <string name="btnAgendamentos">Agendamentos</string>
-    <string name="title_activity_sla">sla</string>
 
 </resources>

@@ -26,4 +26,7 @@
         <activity android:name=".home.TelaPrincipal"></activity>
     </application>
 
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

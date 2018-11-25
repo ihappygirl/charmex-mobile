@@ -120,13 +120,13 @@
         android:hint="@string/dataNascimento"
         android:inputType="date"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtTelCel"
+        app:layout_constraintBottom_toTopOf="@+id/perfilCliente_txtTelCel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblCPF" />
 
     <EditText
-        android:id="@+id/txtTelCel"
+        android:id="@+id/perfilCliente_txtTelCel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -158,6 +158,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTelCel" />
+        app:layout_constraintTop_toBottomOf="@+id/perfilCliente_txtTelCel" />
 
 </android.support.constraint.ConstraintLayout>
